@@ -1,0 +1,12 @@
+.home {
+}
+
+.home .home__hero {
+  height: 220px;
+  background-color: var(--color-secondary);
+}
+.home .notification-icons {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto;
+}
