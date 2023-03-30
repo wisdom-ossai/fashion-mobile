@@ -1,9 +1,14 @@
 .home {
+  background-color: var(--color-secondary);
+  min-height: 100%;
 }
 
 .home .home__hero {
   height: 220px;
-  background-color: var(--color-secondary);
+}
+
+.home .home__main {
+  background-color: #fff;
 }
 .home .notification-icons {
   display: grid;
