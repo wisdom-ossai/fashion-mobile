@@ -1,14 +1,28 @@
-import { useState } from "react";
-import { useApp } from "../AppProvider";
+import { useEffect, useRef, useState } from "react";
 import NotificationIcon from "../notification-icon/NotificationIcon";
 import SearchBox from "../search-box/SearchBox";
 
 import "./navbar.css";
 
 const Navbar = () => {
-  const { scrolled } = useApp();
+  const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef<any>(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      console.log(navRef?.current?.offsetTop);
+      setScrolled(window.scrollY > 24);
+    });
+
+    return () => {};
+  }, []);
+
   return (
-    <nav className={`navbar ${scrolled ? "active" : ""}`}>
+    <nav
+      id="navbar"
+      className={`navbar ${scrolled ? "active" : ""}`}
+      ref={navRef}
+    >
       <div className="flex align-center justify-between">
         <SearchBox />
         <div className="notification-icons">

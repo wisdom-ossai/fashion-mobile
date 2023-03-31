@@ -31,4 +31,5 @@
   border-radius: 4px;
   content: attr(data-badge);
   border: none;
+  font-family: "Jost", sans-serif;
 }

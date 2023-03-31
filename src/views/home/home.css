@@ -4,7 +4,12 @@
 }
 
 .home .home__hero {
-  height: 220px;
+  height: 250px;
+  background-color: inherit; /*Default bg, similar to the background's base color*/
+  background-image: url("../../assets/home_hero.png");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  background-size: 160px 162px;
 }
 
 .home .home__main {
@@ -14,4 +19,15 @@
   display: grid;
   gap: 5px;
   grid-template-columns: auto auto;
+}
+
+.hero_content h1,
+.hero_content h3,
+.hero_content p {
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.hero_content .description {
+  font-size: 0.675rem;
 }

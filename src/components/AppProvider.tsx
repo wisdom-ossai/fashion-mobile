@@ -8,7 +8,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
       <div
         ref={ref}
         id="screen"
-        className="screen"
+        // className="screen"
         onScroll={(e) => {
           if (ref?.current) {
             if (ref.current.scrollTop > 50) {

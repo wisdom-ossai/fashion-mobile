@@ -3,13 +3,17 @@
   --color-secondary: #e9ebea;
   --color-gray: #f0f0f0;
   --color-gray-100: #f6f6f6;
+  --color-gray-200: #fbfbfb;
   --color-dark: #2b2d40;
   --color-text-light: #cbccce;
   --color-text-dark: #858b92;
   --color-pink: #e65986;
   --color-frame: #c8cace;
+  --color-warn: #f9a33e;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Jost", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,24 +28,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-#root {
-  margin: auto;
-}
-
-.screen {
-  width: 320px;
-  height: 600px;
-  background-color: #fff;
-  overflow-y: auto;
-}
-
-body {
+body,
+html {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  align-items: center;
+  padding: 0;
 }
 
 .flexbox {
@@ -61,10 +51,52 @@ body {
 .justify-between {
   justify-content: space-between;
 }
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.m-auto {
+  margin: auto;
+}
 .pt-4 {
   padding-top: 2rem;
 }
 
 .px-2 {
   padding-inline: 1rem;
+}
+
+.pt-2 {
+  padding-top: 1rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.py-2 {
+  padding-block: 1rem;
+}
+
+.dark-btn {
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding-inline: 1rem;
+}
+
+.btn-sm {
+  padding-block: 0.75rem;
+  font-size: 0.75rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+button:hover {
+  opacity: 0.85;
 }

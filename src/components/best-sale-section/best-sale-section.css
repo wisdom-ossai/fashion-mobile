@@ -1,0 +1,93 @@
+.best-sale-section {
+  background-color: var(--color-gray-200);
+}
+.best-sale-section .section-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.best-sale-section .section-nav.sticky {
+  position: fixed;
+  top: 82px;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  padding-inline: 1rem;
+  background-color: var(--color-gray-200);
+}
+
+.sticky + .products {
+  padding-top: 70px;
+}
+
+.best-sale-section .section-nav .title {
+  color: var(--color-dark);
+}
+
+.best-sale-section .section-nav .navigator {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.best-sale-section .section-nav .navigator:hover {
+  text-decoration: underline;
+}
+
+.best-sale-section .products {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.best-sale-section .products .product-item {
+  position: relative;
+}
+
+.best-sale-section .products .product-item .love {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+.best-sale-section .products .product-item .love .ri-heart-fill {
+  color: var(--color-pink);
+}
+
+.best-sale-section .products .product-item.hover {
+  box-shadow: 2px 3px 14px -12px rgba(0, 0, 0, 0.1);
+}
+
+.best-sale-section .products .product-item .image-container {
+  background-color: var(--color-gray);
+}
+
+.best-sale-section .products .product-item .product-content .ri-star-fill {
+  color: var(--color-warn);
+}
+
+.best-sale-section .products .product-item .product-content p {
+  margin: 0;
+}
+.best-sale-section .products .product-item .product-content.hover {
+  background-color: #fff;
+}
+
+.best-sale-section .products .product-item .product-content .category {
+  font-size: 0.65rem;
+}
+
+.best-sale-section .products .product-item .product-content .description {
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.best-sale-section .products .product-item .product-content .rating {
+  font-size: 0.65rem;
+}
+
+.best-sale-section .products .product-item .product-content .price {
+  color: var(--color-primary);
+}

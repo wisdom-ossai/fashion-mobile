@@ -1,0 +1,30 @@
+.categories-section {
+  background-color: #fff;
+}
+
+.categories-section .items {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.items .item .item-icon {
+  background-color: var(--color-gray);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+
+.items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items .item .item-name {
+  /* margin: 0; */
+  font-size: 0.72rem;
+}
