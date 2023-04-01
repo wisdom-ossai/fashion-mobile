@@ -140,10 +140,31 @@ p {
   color: var(--color-warn);
 }
 
-img.rounded {
+.ri-heart-fill {
+  color: var(--color-pink);
+}
+
+img.rounded,
+button.rounded {
   border-radius: 50%;
 }
 
 .text-dark {
   color: var(--color-dark);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+  color: #fff;
+}
+
+.bold-font {
+  font-weight: 700;
 }

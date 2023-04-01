@@ -12,3 +12,9 @@
 .navbar.active {
   background-color: #fff;
 }
+
+.notification-icons {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto;
+}

@@ -2,6 +2,9 @@ import "./product-details.css";
 import productImg from "../../assets/shirt_full.png";
 import Tab from "../../components/tab/Tab";
 import AboutItem from "./components/about-item/AboutItem";
+import { useOutletContext } from "react-router-dom";
+import { useEffect } from "react";
+import BottomNav from "./components/bottom-nav/BottomNav";
 
 const tabContent = [
   {
@@ -19,6 +22,22 @@ const tabContent = [
 ];
 
 const ProductDetails = () => {
+  const context: any = useOutletContext();
+
+  useEffect(() => {
+    if (context) {
+      context.setIsMain(false);
+      context.setTopNavBackground("#fff");
+    }
+  }, [context]);
+
+  useEffect(() => {
+    return () => {
+      context.setIsMain(true);
+      context.setTopNavBackground("");
+    };
+  }, []);
+
   return (
     <div className="product-details">
       <section className="header">
@@ -39,6 +58,7 @@ const ProductDetails = () => {
       <section className="py-2">
         <Tab data={tabContent} />
       </section>
+      <BottomNav />
     </div>
   );
 };

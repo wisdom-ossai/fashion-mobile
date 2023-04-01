@@ -157,7 +157,7 @@ const AboutItem = () => {
       <div className="recommendation">
         <h5>Recommendations</h5>
         <div>
-          <Products data={ProductData.slice(5, 12)} />
+          <Products data={ProductData.slice(4, 12)} />
         </div>
       </div>
     </div>

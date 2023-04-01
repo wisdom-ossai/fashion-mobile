@@ -24,11 +24,6 @@
 .home .home__main {
   background-color: #fff;
 }
-.home .notification-icons {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: auto auto;
-}
 
 .hero_content h1,
 .hero_content h3,

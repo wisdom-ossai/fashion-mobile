@@ -1,6 +1,7 @@
 .product-details {
   background-color: var(--color-secondary);
   min-height: 100%;
+  padding-top: 75px;
 }
 
 .product-details .header {

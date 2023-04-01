@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home__hero">
-        <Navbar />
         <HeroSlider
           autoplay
           height={265}

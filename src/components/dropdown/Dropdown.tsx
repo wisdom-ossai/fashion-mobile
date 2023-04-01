@@ -50,8 +50,8 @@ const Dropdown: FC<IDropdownProp> = ({
       <div className={`dropdown-menu${openDropdown ? " dropdown-active" : ""}`}>
         <ul>
           {menuItems.map((v) => (
-            <li>
-              <a onClick={() => handleItemClick(v)} key={v.label} href="#">
+            <li key={v.label}>
+              <a onClick={() => handleItemClick(v)} href="#">
                 {v.label}
               </a>
             </li>
