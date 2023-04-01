@@ -1,23 +1,16 @@
 import { Link } from "react-router-dom";
 import "./best-sale-section.css";
-import Vintage1 from "../../assets/vintage_1.png";
 import { useEffect, useRef, useState } from "react";
 import { Products } from "../../assets/data";
 
 const BestSaleSection = () => {
   const navRef = useRef<any>(null);
   const [sticky, setSticky] = useState(false);
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState<number | null>(null);
   const elem = document.getElementById("navbar");
 
   useEffect(() => {
     window.addEventListener("scroll", function () {
-      console.log(
-        "saamu",
-        elem?.offsetTop,
-        navRef?.current?.offsetTop,
-        window.pageYOffset
-      );
       setSticky(window.pageYOffset >= 280);
     });
   }, []);
@@ -34,9 +27,9 @@ const BestSaleSection = () => {
         {Products.map((product) => (
           <div
             key={product.id}
-            className={`product-item  ${hover ? "hover" : ""}`}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
+            className={`product-item  ${hover === product.id ? "hover" : ""}`}
+            onMouseEnter={() => setHover(product.id)}
+            onMouseLeave={() => setHover(null)}
           >
             <span className="love">
               <i
@@ -52,7 +45,11 @@ const BestSaleSection = () => {
                 className="m-auto"
               />
             </div>
-            <div className={`product-content pt-2 p-1 ${hover ? "hover" : ""}`}>
+            <div
+              className={`product-content pt-2 p-1 ${
+                hover === product.id ? "hover" : ""
+              }`}
+            >
               <p className="category">{product.category}</p>
               <p className="description">{product.description}</p>
               <div className="flexbox justify-between mt-2">

@@ -39,6 +39,7 @@
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 80px;
 }
 
 .best-sale-section .products .product-item {

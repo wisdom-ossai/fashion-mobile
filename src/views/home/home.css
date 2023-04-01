@@ -3,13 +3,22 @@
   min-height: 100%;
 }
 
-.home .home__hero {
-  height: 250px;
+.home .home__hero-1 {
+  min-height: 265px;
   background-color: inherit; /*Default bg, similar to the background's base color*/
   background-image: url("../../assets/home_hero.png");
   background-position: right bottom; /*Positioning*/
   background-repeat: no-repeat; /*Prevent showing multiple background images*/
-  background-size: 160px 162px;
+  background-size: 50% 175px;
+}
+
+.home .home__hero-2 {
+  min-height: 265px;
+  background-color: inherit; /*Default bg, similar to the background's base color*/
+  background-image: url("../../assets/home_hero.png");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  background-size: 50% 175px;
 }
 
 .home .home__main {
@@ -30,4 +39,7 @@
 
 .hero_content .description {
   font-size: 0.675rem;
+}
+
+@media screen {
 }

@@ -10,11 +10,8 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", function () {
-      console.log(navRef?.current?.offsetTop);
       setScrolled(window.scrollY > 24);
     });
-
-    return () => {};
   }, []);
 
   return (

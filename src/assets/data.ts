@@ -197,3 +197,30 @@ export const Products = [
     price: "$14.00",
   },
 ];
+
+export const NavItems = [
+  {
+    id: "home",
+    icon: "",
+    name: "Home",
+    path: "/",
+  },
+  {
+    id: "ticket",
+    icon: "",
+    name: "Voucer",
+    path: "/voucher",
+  },
+  {
+    id: "wallet",
+    icon: "",
+    name: "Wallet",
+    path: "/wallet",
+  },
+  {
+    id: "settings",
+    icon: "",
+    name: "Settings",
+    path: "/settings",
+  },
+];
