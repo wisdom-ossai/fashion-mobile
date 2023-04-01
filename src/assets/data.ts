@@ -6,7 +6,7 @@ import shirt1 from "./shirt_1.png";
 export const Products = [
   {
     id: 1,
-    slug: "",
+    slug: "vintage1",
     category: "Shirt",
     imageUrl: vintage1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -18,7 +18,7 @@ export const Products = [
   },
   {
     id: 2,
-    slug: "",
+    slug: "shirt2",
     category: "Shirt",
     imageUrl: shirt2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -30,7 +30,7 @@ export const Products = [
   },
   {
     id: 3,
-    slug: "",
+    slug: "shirt3",
     category: "Shirt",
     imageUrl: shirt2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -42,7 +42,7 @@ export const Products = [
   },
   {
     id: 4,
-    slug: "",
+    slug: "shirt4",
     category: "Shirt",
     imageUrl: shirt1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -54,7 +54,7 @@ export const Products = [
   },
   {
     id: 5,
-    slug: "",
+    slug: "vintage5",
     category: "Shirt",
     imageUrl: vintage2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -66,7 +66,7 @@ export const Products = [
   },
   {
     id: 6,
-    slug: "",
+    slug: "vintage6",
     category: "Shirt",
     imageUrl: vintage2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -78,7 +78,7 @@ export const Products = [
   },
   {
     id: 7,
-    slug: "",
+    slug: "vintage7",
     category: "Shirt",
     imageUrl: vintage1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -90,7 +90,7 @@ export const Products = [
   },
   {
     id: 8,
-    slug: "",
+    slug: "shirt8",
     category: "Shirt",
     imageUrl: shirt1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -102,7 +102,7 @@ export const Products = [
   },
   {
     id: 9,
-    slug: "",
+    slug: "shirt9",
     category: "Shirt",
     imageUrl: shirt2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -114,7 +114,7 @@ export const Products = [
   },
   {
     id: 10,
-    slug: "",
+    slug: "vintage10",
     category: "Shirt",
     imageUrl: vintage1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -126,7 +126,7 @@ export const Products = [
   },
   {
     id: 11,
-    slug: "",
+    slug: "vintage11",
     category: "Shirt",
     imageUrl: vintage2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -138,7 +138,7 @@ export const Products = [
   },
   {
     id: 12,
-    slug: "",
+    slug: "shirt12",
     category: "Shirt",
     imageUrl: shirt1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -150,7 +150,7 @@ export const Products = [
   },
   {
     id: 13,
-    slug: "",
+    slug: "shirt13",
     category: "Shirt",
     imageUrl: shirt2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -162,7 +162,7 @@ export const Products = [
   },
   {
     id: 14,
-    slug: "",
+    slug: "shirt14",
     category: "Shirt",
     imageUrl: shirt2,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -174,7 +174,7 @@ export const Products = [
   },
   {
     id: 15,
-    slug: "",
+    slug: "vintage15",
     category: "Shirt",
     imageUrl: vintage1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
@@ -186,7 +186,7 @@ export const Products = [
   },
   {
     id: 16,
-    slug: "",
+    slug: "shirt16",
     category: "Shirt",
     imageUrl: shirt1,
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",

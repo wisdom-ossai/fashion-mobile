@@ -1,5 +1,40 @@
+.product-details {
+  background-color: var(--color-secondary);
+  min-height: 100%;
+}
+
 .product-details .header {
   min-height: 265px;
-  background-color: var(--color-gray-100);
-  background-image: url("../../assets/shirt_full.png");
+  padding-inline: 1rem;
+}
+
+.product-details .header .product-img {
+  border-radius: 4px;
+}
+
+.product-details .header p {
+  margin: 0;
+}
+
+.product-details .header .p-id {
+  font-size: 0.875rem;
+  margin-top: 0.875rem;
+}
+.product-details .header .description {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-block: 0.5rem;
+}
+
+.product-details .header .stat {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.75rem;
+}
+
+.product-details .header .stat p {
+  display: flex;
+  align-items: center;
 }

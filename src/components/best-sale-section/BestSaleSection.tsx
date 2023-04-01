@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./best-sale-section.css";
 import { useEffect, useRef, useState } from "react";
 import { Products } from "../../assets/data";
 
 const BestSaleSection = () => {
+  const navigate = useNavigate();
   const navRef = useRef<any>(null);
   const [sticky, setSticky] = useState(false);
   const [hover, setHover] = useState<number | null>(null);
@@ -26,6 +27,7 @@ const BestSaleSection = () => {
       <div className="products">
         {Products.map((product) => (
           <div
+            onClick={() => navigate(`/product-details/${product.slug}`)}
             key={product.id}
             className={`product-item  ${hover === product.id ? "hover" : ""}`}
             onMouseEnter={() => setHover(product.id)}

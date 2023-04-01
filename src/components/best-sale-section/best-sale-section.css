@@ -44,12 +44,14 @@
 
 .best-sale-section .products .product-item {
   position: relative;
+  cursor: pointer;
 }
 
 .best-sale-section .products .product-item .love {
   position: absolute;
   top: 3px;
   right: 10px;
+  cursor: pointer;
 }
 
 .best-sale-section .products .product-item .love .ri-heart-fill {

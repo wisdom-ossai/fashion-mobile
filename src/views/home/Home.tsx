@@ -58,7 +58,6 @@ const Home = () => {
       <main className="home__main pt-4">
         <CategoriesSection />
         <BestSaleSection />
-
         <BottomNav />
       </main>
     </div>
