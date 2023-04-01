@@ -34,7 +34,7 @@ const Tab = ({
   return (
     <>
       <div className="tab-container">
-        <div className="flex">
+        <div className="flex pl-2">
           {data.map((item) => (
             <TabItem
               key={item.id}

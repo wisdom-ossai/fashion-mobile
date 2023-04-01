@@ -3,7 +3,7 @@ import vintage2 from "./vintage_2.png";
 import shirt2 from "./shirt_2.png";
 import shirt1 from "./shirt_1.png";
 
-export const Products = [
+export const ProductData = [
   {
     id: 1,
     slug: "vintage1",
