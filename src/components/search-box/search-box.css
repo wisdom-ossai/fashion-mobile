@@ -1,6 +1,6 @@
 div#searchBox {
   float: none;
-  color: #777;
+  color: var(--color-dark);
 }
 
 #searchform input {
@@ -15,7 +15,7 @@ div#searchBox #searchform:focus-within {
 }
 
 div#searchBox #searchform {
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-text-light);
   width: 220px;
   padding-top: 1px;
   display: inline-block;
@@ -68,5 +68,5 @@ input#sbox {
   color: var(--color-dark);
 }
 span#noEasy:hover {
-  color: #444;
+  color: var(--color-text-dark);
 }
