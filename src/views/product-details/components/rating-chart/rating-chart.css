@@ -1,0 +1,53 @@
+.rating-percents {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 0.3rem;
+}
+.rating-percent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-no {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+.rating-progress {
+  margin: 0 0.5rem;
+  background-color: var(--color-frame);
+  border-radius: 1.8rem;
+  width: 100%;
+  height: 8px;
+  position: relative;
+}
+.rating-progress::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 1.8rem;
+}
+
+.rating-percent:nth-child(1) .rating-progress::before {
+  width: 84%;
+}
+.rating-percent:nth-child(2) .rating-progress::before {
+  width: calc(2 * 9%);
+}
+.rating-percent:nth-child(3) .rating-progress::before {
+  width: calc(2 * 4%);
+}
+.rating-percent:nth-child(4) .rating-progress::before {
+  width: calc(2 * 2%);
+}
+.rating-percent:nth-child(5) .rating-progress::before {
+  width: calc(2 * 1%);
+}
+.rating-percent-no {
+  font-size: 0.75rem;
+  color: var(--color-dark);
+  font-weight: 600;
+}

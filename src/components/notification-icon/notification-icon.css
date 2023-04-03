@@ -1,0 +1,35 @@
+.notification-badges button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  vertical-align: top;
+  text-align: center;
+  line-height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark);
+}
+.notification-badges [data-badge] {
+  position: relative;
+}
+.notification-badges [data-badge]:after {
+  position: absolute;
+  right: -5px;
+  top: -2px;
+  min-width: 10px;
+  min-height: 10px;
+  line-height: 10px;
+  padding-inline: 4px;
+  color: #fff;
+  padding-block: 2px;
+  background-color: var(--color-pink);
+  font-size: 10px;
+  border-radius: 4px;
+  content: attr(data-badge);
+  border: none;
+  font-family: "Jost", sans-serif;
+}

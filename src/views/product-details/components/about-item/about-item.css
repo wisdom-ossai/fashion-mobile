@@ -1,0 +1,59 @@
+.about-item .info {
+  font-size: 0.75rem;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.about-item .info p {
+  margin: 0;
+}
+
+.about-item .info .value {
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+.about-item .rating-detail {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about-item .rating-detail .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-item .rating-detail .rated {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 3fr 1fr 1fr;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.about-item .rating-detail p,
+.about-item .rating-detail .rated span {
+  font-size: 0.75rem;
+}
+
+.about-item .rating-detail .rated h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.about-item .review-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.about-item p {
+  font-size: 0.75rem;
+}
+
+.about-item .top-reviews h5,
+about-item .top-reviews h5 {
+  margin: 0;
+}

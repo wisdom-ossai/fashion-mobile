@@ -1,0 +1,170 @@
+:root {
+  --color-primary: #4cb298;
+  --color-primary-light: #bbdad4;
+  --color-secondary: #e9ebea;
+  --color-gray: #f0f0f0;
+  --color-gray-100: #f6f6f6;
+  --color-gray-200: #fbfbfb;
+  --color-dark: #2b2d40;
+  --color-text-light: #cbccce;
+  --color-text-dark: #858b92;
+  --color-pink: #e65986;
+  --color-frame: #c8cace;
+  --color-warn: #f9a33e;
+
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #fff;
+
+  color: var(--color-text-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark);
+}
+
+li {
+  font-size: 0.75rem;
+}
+
+.flexbox {
+  display: flex;
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.m-auto {
+  margin: auto;
+}
+.pt-4 {
+  padding-top: 2rem;
+}
+.pl-2 {
+  padding-left: 1rem;
+}
+
+.px-2 {
+  padding-inline: 1rem;
+}
+
+.pt-2 {
+  padding-top: 1rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.py-2 {
+  padding-block: 1rem;
+}
+
+.dark-btn {
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding-inline: 1rem;
+}
+
+.btn-sm {
+  padding-block: 0.75rem;
+  font-size: 0.75rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+button:hover {
+  opacity: 0.85;
+}
+
+p {
+  margin: 0;
+}
+
+.btn-text-primary {
+  color: var(--color-primary);
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+}
+
+.hr {
+  margin-block: 1rem;
+  height: 1px;
+  background: var(--color-text-light);
+}
+
+.ri-star-fill,
+.ri-star-half-line {
+  color: var(--color-warn);
+}
+
+.ri-heart-fill {
+  color: var(--color-pink);
+}
+
+img.rounded,
+button.rounded {
+  border-radius: 50%;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+  color: #fff;
+}
+
+.bold-font {
+  font-weight: 700;
+}

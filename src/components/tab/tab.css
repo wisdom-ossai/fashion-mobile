@@ -1,0 +1,24 @@
+.tab-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.tab-container .tab-button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: transparent !important;
+  border: none;
+  outline: 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-bottom: 1px solid var(--color-text-light);
+  color: var(--color-text-dark);
+  flex: 1;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+}

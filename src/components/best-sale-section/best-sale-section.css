@@ -1,0 +1,36 @@
+.best-sale-section {
+  background-color: var(--color-gray-200);
+}
+.best-sale-section .section-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.best-sale-section .section-nav.sticky {
+  position: fixed;
+  top: 72px;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  padding-inline: 1rem;
+  background-color: var(--color-gray-200);
+}
+
+.sticky + .products {
+  padding-top: 70px;
+}
+
+.best-sale-section .section-nav .title {
+  color: var(--color-dark);
+}
+
+.best-sale-section .section-nav .navigator {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.best-sale-section .section-nav .navigator:hover {
+  text-decoration: underline;
+}

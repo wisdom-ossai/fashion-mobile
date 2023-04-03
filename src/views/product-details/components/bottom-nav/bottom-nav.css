@@ -1,0 +1,43 @@
+.bottom-secondary-nav {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.bottom-secondary-nav .bottom-nav-items {
+  display: flex;
+  gap: 16px;
+}
+
+.bottom-secondary-nav .bottom-nav-items .price {
+  font-size: 1.125rem;
+}
+
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item:hover {
+  opacity: 0.875;
+}
+
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item .icon.active {
+  color: var(--color-primary);
+}
+
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item .name.active {
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item p {
+  font-size: 0.75rem;
+  margin: 0;
+}
