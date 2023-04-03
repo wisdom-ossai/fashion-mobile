@@ -13,6 +13,7 @@ Not much technologies were used for this project. See the [package.json](package
 1. React
 2. CSS
 3. React Router DOM
+4. Framer Motion for basic animation
 
 ## Source of UI
 
