@@ -1,4 +1,4 @@
-.bottom-nav {
+.bottom-secondary-nav {
   padding: 1rem;
   position: fixed;
   bottom: 0;
@@ -7,16 +7,16 @@
   background-color: #fff;
 }
 
-.bottom-nav .bottom-nav-items {
+.bottom-secondary-nav .bottom-nav-items {
   display: flex;
   gap: 16px;
 }
 
-.bottom-nav .bottom-nav-items .price {
+.bottom-secondary-nav .bottom-nav-items .price {
   font-size: 1.125rem;
 }
 
-.bottom-nav .bottom-nav-items .bottom-nav-item {
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,20 +24,20 @@
   cursor: pointer;
 }
 
-.bottom-nav .bottom-nav-items .bottom-nav-item:hover {
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item:hover {
   opacity: 0.875;
 }
 
-.bottom-nav .bottom-nav-items .bottom-nav-item .icon.active {
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item .icon.active {
   color: var(--color-primary);
 }
 
-.bottom-nav .bottom-nav-items .bottom-nav-item .name.active {
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item .name.active {
   color: var(--color-dark);
   font-weight: 500;
 }
 
-.bottom-nav .bottom-nav-items .bottom-nav-item p {
+.bottom-secondary-nav .bottom-nav-items .bottom-nav-item p {
   font-size: 0.75rem;
   margin: 0;
 }

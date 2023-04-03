@@ -1,8 +1,14 @@
 import "./categories-section.css";
 
-const CategoriesSection = () => {
+const CategoriesSection = ({ m }: { m: any }) => {
   return (
-    <section className="categories-section  px-2">
+    <m.section
+      initial={{ opacity: 0, y: "-50px" }}
+      animate={{ opacity: 1, y: "0px" }}
+      exit={{ opacity: 0, y: "-50px" }}
+      transition={{ delay: 0.5, duration: 0.5, ease: "easeIn" }}
+      className="categories-section  px-2"
+    >
       <div className="items">
         <div className="item">
           <div className="item-icon">
@@ -35,7 +41,7 @@ const CategoriesSection = () => {
           <p className="item-name">Top Up</p>
         </div>
       </div>
-    </section>
+    </m.section>
   );
 };
 

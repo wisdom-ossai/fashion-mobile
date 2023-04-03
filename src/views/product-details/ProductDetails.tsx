@@ -5,6 +5,7 @@ import AboutItem from "./components/about-item/AboutItem";
 import { useOutletContext } from "react-router-dom";
 import { useEffect } from "react";
 import BottomNav from "./components/bottom-nav/BottomNav";
+import { motion as m } from "framer-motion";
 
 const tabContent = [
   {
@@ -32,6 +33,7 @@ const ProductDetails = () => {
   }, [context]);
 
   useEffect(() => {
+    typeof window !== "undefined" && window.scrollTo(0, 0);
     return () => {
       context.setIsMain(true);
       context.setTopNavBackground("");
@@ -39,25 +41,34 @@ const ProductDetails = () => {
   }, []);
 
   return (
-    <div className="product-details">
-      <section className="header">
-        <img src={productImg} width="100%" className="product-img" />
-        <p className="p-id">tokoboju.id</p>
-        <p className="description">
-          Essentials Men's Short-Sleeve Crewneck T-Shirt
-        </p>
-        <div className="stat">
-          <p>
-            <i className="ri-star-fill"></i>&nbsp; 4.9 Ratings
+    <div>
+      <m.div
+        initial={{ opacity: 0, y: "-50px" }}
+        animate={{ opacity: 1, y: "0px" }}
+        exit={{ opacity: 0, y: "-50px" }}
+        transition={{ delay: 0.5, duration: 0.5, ease: "easeIn" }}
+        className="product-details"
+      >
+        <section className="header">
+          <img src={productImg} width="100%" className="product-img" />
+          <p className="p-id">tokoboju.id</p>
+          <p className="description">
+            Essentials Men's Short-Sleeve Crewneck T-Shirt
           </p>
-          <p>2.3k+ Reviews</p>
-          <p>2.9k+ Sold</p>
-        </div>
-      </section>
+          <div className="stat">
+            <p>
+              <i className="ri-star-fill"></i>&nbsp; 4.9 Ratings
+            </p>
+            <p>2.3k+ Reviews</p>
+            <p>2.9k+ Sold</p>
+          </div>
+        </section>
 
-      <section className="py-2">
-        <Tab data={tabContent} />
-      </section>
+        <section className="py-2">
+          <Tab data={tabContent} />
+        </section>
+      </m.div>
+
       <BottomNav />
     </div>
   );

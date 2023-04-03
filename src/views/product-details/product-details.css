@@ -1,5 +1,5 @@
 .product-details {
-  background-color: var(--color-secondary);
+  background-color: var(--color-gray-200);
   min-height: 100%;
   padding-top: 75px;
 }

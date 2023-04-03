@@ -1,9 +1,16 @@
 import { useLocation } from "react-router-dom";
+import { motion as m } from "framer-motion";
 import "./bottom-nav.css";
 
 const BottomNav = () => {
   return (
-    <nav className="bottom-nav">
+    <m.nav
+      initial={{ opacity: 0.85, y: "20px" }}
+      animate={{ opacity: 1, y: "0px" }}
+      exit={{ opacity: 0.85, y: "20px" }}
+      transition={{ delay: 0.25, duration: 0.5, ease: "easeIn" }}
+      className="bottom-secondary-nav"
+    >
       <div className="bottom-nav-items justify-between">
         <div>
           <p style={{ fontSize: ".75rem" }}>Total Price</p>
@@ -31,7 +38,7 @@ const BottomNav = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </m.nav>
   );
 };
 
